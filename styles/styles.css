@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+body{
+  background-color: #230E3D;
+  color: white;
+}
+
+header{
+  display: flex;
+  justify-content:  space-between;
+  padding: 20px 200px;
+  align-items: center;
+}
+.logo{
+  color: white;
+}
+.wave{
+  color: #ff4ecd;
+}
+
+.navbar{
+  display: flex;
+  gap: 32px;
+
+}
+
+.navbar a{
+
+  text-decoration: none;
+  color: white;
+}
+
+.btn{
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700px;
+  cursor: pointer;
+   background: linear-gradient(
+    90deg,
+    #ffdd00 0%,
+    #ff4ecd 50%,
+    #2b6cff 80%
+    );
+}
+
+/* banner section */
+.banner{
+  width: 1600px;
+  height: 760;
+  border: 2px solid yellow;
+  background-image: url(hero-bg.png);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  /* height: 100vh; */
+}
+.pic{
+  position: relative;
+  width: 300px;
+}
+.bg-pic{
+  width: 100%;
+  display: block;
+}
+.front-pic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* podcast */
+.podcast{
+  /* display: flex; */
+}
+
+.pod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.pod p{
+  font-size: 16px;
+  font-weight:400px;
+}
+.menu{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.mon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.epi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ave{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ind{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast h1{
+  color: #00FF88;
+}
+
+/* box. */
+
+.grid{
+  padding: 100px 100px;
+  text-align: center;
+}
+.box-container{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+}
+.box{
+  background-color:#351165;
+  padding: 10px;
+  border-radius: 20px;
+
+}
+#box-1{
+  grid-row: span 2;
+  padding: 50px;
+}
+#box-2{
+  grid-column: span 2;
+  padding: 50px;
+}
+#box-3{
+  grid-column: span 1;
+  grid-row: span 1;
+  padding: 50px;
+}
