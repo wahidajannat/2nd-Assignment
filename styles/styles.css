@@ -57,20 +57,42 @@ header{
 
 /* banner section */
 .banner{
-  width: 1600px;
-  height: 760;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   background-image: url(hero-bg.png);
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  background-repeat: no-repeat;
   padding: 100px;
   /* height: 100vh; */
 }
+.spo-mes{
+  display: flex;
+  gap: 10px;
+}
+
 .pic{
   position: relative;
   width: 300px;
 }
+ .btn-1{
+  background-color: #ff4ecd;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  gap: 5px;
+ }
+ .btn-2{
+  border: 1px solid #00FF88;
+ padding: 20px;
+ border-radius: 30px;
+ display: flex;
+ gap: 5px;
+ background-color: #230E3D;
+ color: white;
+ }
 .bg-pic{
   width: 100%;
   display: block;
@@ -132,7 +154,7 @@ header{
 /* box. */
 
 .grid{
-  padding: 100px 100px;
+  padding: 100px 200px;
   text-align: center;
 }
 .box-container{
@@ -160,4 +182,61 @@ header{
   grid-column: span 1;
   grid-row: span 1;
   padding: 50px;
+}
+
+/* Featured Episodes */
+.yt-videos{
+  /* border: 2px solid yellow; */
+  display: grid;
+  padding: 100px;
+  text-align: center;
+  height: 800px;
+ 
+}
+
+.yt-videos h2{
+  font-size: 48px;
+  font-weight: 700px;
+ 
+}
+
+.videos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat( 3, 1fr);
+  gap: 15px;
+}
+
+.vd-1{
+  grid-row: span 1;
+  background-color:#351165;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+}
+
+/* challehges */
+
+.challenges{
+  display: flex;
+  padding: 200px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.challenges h2{
+display: flex;
+align-items: center;
+}
+.cha{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icons{
+  display: flex;
+  gap: 15px;
+
 }
