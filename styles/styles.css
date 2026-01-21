@@ -24,7 +24,9 @@ header{
   color: white;
 }
 .wave{
-  color: #ff4ecd;
+  background: linear-gradient(90deg, yellow,  #ff4ecd );
+  background-clip: text;
+  color: transparent;
 }
 
 .navbar{
@@ -63,9 +65,11 @@ header{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  padding: 100px;
+  padding: 60px;
+  text-align: center;
   /* height: 100vh; */
 }
 .spo-mes{
@@ -78,20 +82,30 @@ header{
   width: 300px;
 }
  .btn-1{
-  background-color: #ff4ecd;
+ background: linear-gradient(
+    90deg,
+    #ffdd00 0%,
+    #ff4ecd 50%,
+    #2b6cff 80%
+    );
   padding: 10px;
   border-radius: 30px;
   display: flex;
   gap: 5px;
+  color: white;
+  align-items: center;
+  font-size: medium;
  }
  .btn-2{
   border: 1px solid #00FF88;
- padding: 20px;
+ padding: 10px;
  border-radius: 30px;
  display: flex;
  gap: 5px;
  background-color: #230E3D;
  color: white;
+ align-items: center;
+ font-size: medium;
  }
 .bg-pic{
   width: 100%;
@@ -211,32 +225,88 @@ header{
   grid-row: span 1;
   background-color:#351165;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 350px;
+
 }
 
 /* challehges */
 
 .challenges{
-  display: flex;
+  display: grid;
   padding: 200px;
   gap: 20px;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  
 }
 
 .challenges h2{
 display: flex;
-align-items: center;
+justify-content: center;
 }
+
+
 .cha{
   display: flex;
   gap: 20px;
   align-items: center;
+  background-color: #351165;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .icons{
   display: flex;
   gap: 15px;
 
+}
+
+/* footer */
+.footer{
+  background-image: url(footer-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+  text-align: center;
+ 
+  
+}
+
+.footer-menu{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+
+}
+
+.footer-wave{
+ background: linear-gradient(90deg, yellow, #ff4ecd);
+  background-clip: text;
+    color: transparent;
+}
+.footer p{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer div{
+
+  /* border: 2px solid #ffdd00; */
+}
+
+.footer-img-1{
+  display: flex;
+  /* padding: 20px; */
+  gap: 10px;
+  
 }
