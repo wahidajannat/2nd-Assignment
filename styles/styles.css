@@ -20,6 +20,10 @@ header{
   padding: 20px 200px;
   align-items: center;
 }
+
+header img{
+  display: none;
+}
 .logo{
   color: white;
 }
@@ -31,8 +35,19 @@ header{
 
 .navbar{
   display: flex;
+  flex: 1;
+  justify-content: center;
   gap: 32px;
 
+
+}
+
+.nav-container{
+  display: flex;
+  /* gap: 30px; */
+  align-items: center;
+  width: 100%;
+ 
 }
 
 .navbar a{
@@ -42,6 +57,7 @@ header{
 }
 
 .btn{
+  margin-left: auto;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -72,6 +88,17 @@ header{
   text-align: center;
   /* height: 100vh; */
 }
+
+.new-badge{
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  background-color: #00FF88;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+}
 .spo-mes{
   display: flex;
   gap: 10px;
@@ -79,7 +106,8 @@ header{
 
 .pic{
   position: relative;
-  width: 300px;
+  width: 260px;
+  margin: 0;
 }
  .btn-1{
  background: linear-gradient(
@@ -95,6 +123,7 @@ header{
   color: white;
   align-items: center;
   font-size: medium;
+  cursor: pointer;
  }
  .btn-2{
   border: 1px solid #00FF88;
@@ -106,7 +135,13 @@ header{
  color: white;
  align-items: center;
  font-size: medium;
+ cursor: pointer;
+ 
  }
+.btn-2:hover{
+  background-color: #2b6cff;
+}
+
 .bg-pic{
   width: 100%;
   display: block;
@@ -309,4 +344,24 @@ justify-content: center;
   /* padding: 20px; */
   gap: 10px;
   
+}
+
+
+
+
+
+
+
+/* Responsive display */
+@media screen and (max-width:576px) {
+  .nav-container{
+    display: none;
+  
+  }
+  
+  header img{
+  display: inline;
+}
+.menu
+
 }
